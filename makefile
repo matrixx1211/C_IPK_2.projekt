@@ -28,10 +28,10 @@ short: compile
 long: compile
 	./ipk-sniffer --interface eth0 --num 5 --tcp --udp --arp --icmp --port 23 
 
-icmp: compile
+run7: compile
 	./ipk-sniffer -i eth0 -n 10 --icmp
 
-arp: compile
+run8: compile
 	./ipk-sniffer -i eth0 -n 10 --arp
 
 helpshort: compile
@@ -39,5 +39,6 @@ helpshort: compile
 
 helplong: compile
 	./ipk-sniffer --help
+
 clean:
-	rm ./ipk-sniffer
+	rm ipk-sniffer

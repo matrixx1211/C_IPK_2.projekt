@@ -1,3 +1,4 @@
+Autor: Marek Bitomský
 # Packet sniffer
 Program slouží pro výpis paketů a filtrování jaké pakety se mají vypisovat.
 Filtrování se nastavuje na příkazové řádce pomocí argumentů, lze nastavit 
@@ -15,3 +16,12 @@ pomocí `-n [počet] | --num [počet]`.
 
 ## Kompilace
 Kompilace se provádí pomocí příkazu `make`. Otestováná na Ubuntu 20.04.
+
+## Testování
+Program byl otestován pomocí `make runX` a dalších příkazů z makefilu, 
+kde **X** v runx znamená číslo testu možnosti 1-8. Následně jsem používat
+linux příkazy `arping`, `ping`, `ping6`, `nc` a `curl` pro ověření konkrétních
+případů.
+
+## Omezení
+Program neumí zpracovávat většinu z ARP protokolu.
